@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ffe6f2;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Front Cover */
+.front-cover {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: #d6336c;
+}
+
+.front-cover h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.front-cover h2 {
+    font-size: 36px;
+    margin: 10px 0 40px 0;
+}
+
+button {
+    padding: 16px 40px;
+    font-size: 26px;
+    margin: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#yes {
+    background: #4caf50;
+    color: white;
+}
+
+#no {
+    background: #e74c3c;
+    color: white;
+    position: relative;
+}
+
+/* Hidden screens */
+.hidden {
+    display: none;
+}
+
+#envelopeScreen {
+    margin-top: 15%;
+}
+
+#envelope {
+    width: 220px;
+    cursor: pointer;
+}
+
+#letterScreen {
+    margin-top: 40px;
+}
+
+#messageBox {
+    font-size: 22px;
+    color: #8b0000;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+/* Floating animation icons */
+.floating {
+    position: absolute;
+    font-size: 30px;
+    animation: rise 4s ease-in infinite;
+}
+
+@keyframes rise {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-300px); opacity: 0; }
+}
